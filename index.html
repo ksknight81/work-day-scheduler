@@ -7,22 +7,138 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha512-UyNhw5RNpQaCai2EdC+Js0QL4RlVmiq41DkmCJsRV3ZxipG2L0HhTqIf/H9Hp8ez2EnFlkBnjRGJU2stW3Lj+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/style.css"/>
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <h1 class="display-3">Kevin's Daily Schedule</h1>
+      <p class="lead">Here are the scheduled appointments for today, </p>
+        <p id="currentDay" class="lead"></p>
+      
     </header>
-    <div class="container">
+    <div class="container-fluid row">
       <!-- Timeblocks go here -->
-    </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 calendar-start border border-primary" id="calendar-hour">
+        <div>8:00 AM</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-9 ml-md-0 ml-sm-5 calendar-activities border border-primary" id="calendar-schedule">
+        <div>Schedule Items</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 ml-md-0 calendar-end border border-primary" id="calendar-save">
+        <div class="text-align">
+        <span class="oi oi-file"></span>
+        </div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 calendar-start border border-primary" id="calendar-hour">
+        <div>9:00 AM</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-9 ml-md-0 ml-sm-5 calendar-activities border border-primary" id="calendar-schedule">
+        <div>Schedule Items</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 ml-md-0 calendar-end border border-primary" id="calendar-save">
+        <div class="text-align">
+        <span class="oi oi-file"></span>
+        </div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 calendar-start border border-primary" id="calendar-hour">
+        <div>10:00 AM</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-9 ml-md-0 ml-sm-5 calendar-activities border border-primary" id="calendar-schedule">
+        <div>Schedule Items</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 ml-md-0 calendar-end border border-primary" id="calendar-save">
+        <div class="text-align">
+        <span class="oi oi-file"></span>
+        </div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5  calendar-start border border-primary" id="calendar-hour">
+        <div>11:00 AM</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-9 ml-md-0 ml-sm-5 calendar-activities border border-primary" id="calendar-schedule">
+        <div>Schedule Items</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 ml-md-0 calendar-end border border-primary" id="calendar-save">
+        <div class="text-align">
+        <span class="oi oi-file"></span>
+        </div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 calendar-start border border-primary" id="calendar-hour">
+        <div>12:00 PM</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-9 ml-md-0 ml-sm-5 calendar-activities border border-primary" id="calendar-schedule">
+        <div>Schedule Items</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 ml-md-0 calendar-end border border-primary" id="calendar-save">
+        <div class="text-align">
+        <span class="oi oi-file"></span>
+        </div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 calendar-start border border-primary" id="calendar-hour">
+        <div>1:00 PM</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-9 ml-md-0 ml-sm-5 calendar-activities border border-primary" id="calendar-schedule">
+        <div>Schedule Items</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 ml-md-0 calendar-end border border-primary" id="calendar-save">
+        <div class="text-align">
+        <span class="oi oi-file"></span>
+        </div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 calendar-start border border-primary" id="calendar-hour">
+        <div>2:00 PM</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-9 ml-md-0 ml-sm-5 calendar-activities border border-primary" id="calendar-schedule">
+        <div>Schedule Items</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 ml-md-0 calendar-end border border-primary" id="calendar-save">
+        <div class="text-align">
+        <span class="oi oi-file"></span>
+        </div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 calendar-start border border-primary" id="calendar-hour">
+        <div>3:00 PM</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-9 ml-md-0 ml-sm-5 calendar-activities border border-primary" id="calendar-schedule">
+        <div>Schedule Items</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 ml-md-0 calendar-end border border-primary" id="calendar-save">
+        <div class="text-align">
+        <span class="oi oi-file"></span>
+        </div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 calendar-start border border-primary" id="calendar-hour">
+        <div>4:00 PM</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-9 ml-md-0 ml-sm-5 calendar-activities border border-primary" id="calendar-schedule">
+        <div>Schedule Items</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 ml-md-0 calendar-end border border-primary" id="calendar-save">
+        <div class="text-align">
+        <span class="oi oi-file"></span>
+        </div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 calendar-start border border-primary" id="calendar-hour">
+        <div>5:00 PM</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-9 ml-md-0 ml-sm-5 calendar-activities border border-primary" id="calendar-schedule">
+        <div>Schedule Items</div>
+      </div>
+      <div style="height: 80px" class="col-xs-12 col-sm-12 col-md-1 ml-sm-5 ml-md-0 calendar-end border border-primary" id="calendar-save">
+        <div class="text-align">
+        <span class="oi oi-file"></span>
+        </div>
+      </div>
+    
 
+    </div>
+  
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
     <script src="/assets/js/script.js"></script>
   </body>
 </html>

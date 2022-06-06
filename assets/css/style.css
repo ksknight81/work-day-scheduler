@@ -69,3 +69,29 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.calendar-hour {
+  border-color: black;
+}
+
+.calendar-start {
+  background-color: aquamarine;
+  
+}
+.calendar-start div {
+    text-align: center;
+    justify-content: center;
+}
+
+.calendar-activities {
+  background-color: aqua;
+  text-align: center;
+  text-justify: auto;
+}
+
+.calendar-end {
+  background-color: lightskyblue;
+  text-align: center;
+  text-justify: auto;
+}
+ 
