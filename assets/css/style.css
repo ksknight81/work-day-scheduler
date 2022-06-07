@@ -27,7 +27,6 @@
     margin-left: 10%;
     margin-right: 10%;
     border-bottom: 10px solid black;
-    /* background-color: #FA8BFF; */
     background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 50%, #2BFF88 100%);
   }
   
@@ -46,7 +45,7 @@
     border-top: 1px solid white;
     
   }
-  
+
   .hour {
     background-color: aquamarine;
     color: #000000;
@@ -56,21 +55,20 @@
   }
   
   .past {
-    background-color: aqua;
+    background-color: red;
     color: white;
   }
-  
+ 
   .present {
     background-color: #ff6961;
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: aqua;
     color: white;
   }
   
-  /* need to figure out why when i hit refresh, the image dissapears*/
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;

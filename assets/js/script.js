@@ -21,19 +21,22 @@ $(document).ready(function () {
         // Save text in local storage
         localStorage.setItem(time, text);
     })
- //this is using moment - can we figure out how this works without??  
-    function timeTracker() {
+ 
+function timeTracker() {
         //get current number of hours.
         var timeNow = moment().hour();
 
-        // loop over time blocks  ****        
-        //$ is referring to the front end class called .time-block and when its clicked, to start the function
-        // function var blockTime will take 'this' hour identified by the id attribute
-        // split("hour") =- What does that do?
+        // loop over time blocks       
+        //$ is referring to the front end class called .time-block (for each of them) and when its clicked, to start the function
+        // function var blockTime will take 'this' hour identified by the id attribute 
         $(".time-block").each(function () {
+            // (this) is referring to each individual ".time-block"
+            // .attr("id") is referring to the ID 
+            // split is taking the ("hour13") from html and splitting it to "hour" & "13" 
+            //[1] is telling it to take the 2nd part of the array (ie, "13")
             var blockTime = parseInt($(this).attr("id").split("hour")[1]);
-// once the above had identified the block time, if it is less then timeNow, remove the class 
-//then add the class of past to it to change the color ?  Might be explaining this wrong
+            // once the above had identified the block time, if it is less then timeNow, remove the class 
+            //then add the class of past to it to change the color ?  Might be explaining this wrong
             // To check the time and add the classes for background indicators
             if (blockTime < timeNow) {
                 $(this).removeClass("future");
@@ -57,16 +60,14 @@ $(document).ready(function () {
     //takes the #class from index.html and the matching .description for 
     //task details and puts them in local storage corresponding to the same "hour8"
     // Get item from local storage if any
-    $("#hour8 .description").val(localStorage.getItem("hour8"));
-    $("#hour9 .description").val(localStorage.getItem("hour9"));
-    $("#hour10 .description").val(localStorage.getItem("hour10"));
-    $("#hour11 .description").val(localStorage.getItem("hour11"));
-    $("#hour12 .description").val(localStorage.getItem("hour12"));
-    $("#hour13 .description").val(localStorage.getItem("hour13"));
-    $("#hour14 .description").val(localStorage.getItem("hour14"));
-    $("#hour15 .description").val(localStorage.getItem("hour15"));
-    $("#hour16 .description").val(localStorage.getItem("hour16"));
-    $("#hour17 .description").val(localStorage.getItem("hour17"));
+    // for sets the variables for the hours fields 
+    for (var i = 8; i < 18; i++ ) {
+        // creating a constant timeBlockID which is equal to the hour8 by doing #hour + i 
+        //(variable to give the number of the hour) + description 
+        const timeBlockId = "#hour" + i + " .description"; 
+        $(timeBlockId).val(localStorage.getItem("hour" + i));
+    }
 
+    // this is not updating constantly - and only runs once at page load.  
     timeTracker();
-})
+});
