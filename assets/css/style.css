@@ -1,97 +1,111 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
-}
-
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
-}
-
-.description{
-  white-space: pre-wrap;
-}
-
-.time-block{
-  text-align: center;
-  border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
-}
-
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
-}
-
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
-}
-
-.calendar-hour {
-  border-color: black;
-}
-
-.calendar-start {
-  background-color: aquamarine;
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
   
-}
-.calendar-start div {
+  textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+
+  #currentDay {
+  font-weight: bold;
+  color: navy;
+  font-size: 25px;
+  }
+
+  .jumbotron {
     text-align: center;
-    justify-content: center;
-}
+    background-color: transparent;
+    color: black;
+    border-radius: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: 10px solid black;
+    /* background-color: #FA8BFF; */
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 50%, #2BFF88 100%);
+  }
+  
+  .description {
+    white-space: pre-wrap;
+  }
+  
+  .time-block {
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;
+    
+  }
+  
+  .hour {
+    background-color: aquamarine;
+    color: #000000;
+    border-top: 1px dashed #000000;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .past {
+    background-color: aqua;
+    color: white;
+  }
+  
+  .present {
+    background-color: #ff6961;
+    color: white;
+  }
+  
+  .future {
+    background-color: #77dd77;
+    color: white;
+  }
+  
+  /* need to figure out why when i hit refresh, the image dissapears*/
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: aquamarine;
+    opacity: 0.6;
 
-.calendar-activities {
-  background-color: aqua;
-  text-align: center;
-  text-justify: auto;
-}
-
-.calendar-end {
-  background-color: lightskyblue;
-  text-align: center;
-  text-justify: auto;
-}
- 
+    color: navy;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /*** OVERWRITE - MEDIA QUERY FOR TABLETS AND SMALLER  ***/
+  /* This will be applied on any screen 768px and bellow */
+  @media screen and (max-width: 768px), screen and (max-width: 575px) {
+    .row {
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .hour {
+      padding-right: 17%;
+    }
+  
+    .saveBtn {
+      border: 0;
+      border-radius: 0.25rem;
+      height: 50px;
+    }
+  
+    textarea {
+      min-height: 85px;
+      border: 0;
+    }
+  }
