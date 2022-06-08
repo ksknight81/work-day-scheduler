@@ -17,7 +17,7 @@ let monthNameList = [
   "October",
   "November",
   "December",
-];
+]; 
 // Change month from Numeric Value to Words
 let Month = monthNameList[cMonth];
 //display date values in currentDay p tag on HTML

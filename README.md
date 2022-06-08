@@ -13,5 +13,5 @@ The link to the deployed URL is: https://ksknight81.github.io/work-day-scheduler
 The page when opened appears like this: 
 ![alt tag]https://github.com/ksknight81/work-day-scheduler/blob/main/images/Screenshot%202022-06-08%20001004.png
 
-
+ 
 
